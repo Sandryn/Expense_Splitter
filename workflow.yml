@@ -26,5 +26,8 @@ jobs:
       - name: Run lint check
         run: flake8 .
 
-      - name: Run tests
+      - name: Run unit tests
         run: pytest -v
+
+      - name: Success message
+        run: echo "✅ All tests passed and lint check successful!"
